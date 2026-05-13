@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admissions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">Superior College</div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="departments.html">Departments</a></li>
+        <li><a href="faculty.html">Faculty</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="page-section">
+
+    <h1>Admission Form</h1>
+
+    <form>
+<label>Name:</label>
+<input type="text" id="name" placeholder="Enter your name">
+
+<label>Father Name:</label>
+<input type="text" id="fname" placeholder="Enter your father name" >
+
+<label>CNIC/B-Form:</label>
+<input type="text" id="cnic" placeholder="Enter CNIC">
+
+<label>Email:</label>
+<input type="email" id="email" placeholder="sdd@gmail.com">
+
+<label>Date of Birth:</label>
+<input type="date" id="birth">
+
+<label>Phone Number:</label>
+<input type="number" id="phone" placeholder="03XXXXXXXXXX">
+
+<label>Gender:</label><br>
+<input type="radio" name="gender" value="male">Male
+<input type="radio" name="gender" value="female">Female<br><br>
+
+<label>Password:</label>
+<input type="password" id="pass">
+
+<label>Confirm Password:</label>
+<input type="password" id="cpass">
+
+<select>
+ <option>BS Computer Science</option>
+ <option>BS IT</option>
+ <option>BBA</option>
+  <option>ICS</option>
+   </select>
+
+  <textarea placeholder="Address"></textarea>
+
+  <button onclick="validate()" type="submit">
+   Submit Application
+   </button>
+
+    </form>
+
+</section>
+<script>
+function validate(){
+
+let name=document.getElementById("name").value;
+let fname=document.getElementById("fname").value;
+let cnic=document.getElementById("cnic").value;
+let email=document.getElementById("email").value;
+let dob=document.getElementById("birth").value;
+let phone=document.getElementById("phone").value;
+let pass=document.getElementById("pass").value;
+let cpass=document.getElementById("cpass").value;
+
+let gender=document.querySelector('input[name="gender"]:checked');
+let course=document.querySelector('input[name="course"]:checked');
+
+if(name==""||fname==""||cnic==""||email==""||dob==""||phone==""||pass==""||cpass==""){
+alert("❌ Please fill all fields");
+return;
+}
+
+else if(cnic.length!=13){
+alert("❌ Please enter 13 digit CNIC");
+return;
+}
+
+else if(!gender){
+alert("❌ Please select gender");
+return;
+}
+
+else if(!course){
+alert("❌ Please select course");
+return;
+}
+
+
+else if(pass!=cpass){
+alert("❌ Password does not match");
+return;
+}
+
+else{
+alert("🎉 Registration Successful!");
+}
+
+}
+</script>
+
+
+</body>
+</html>

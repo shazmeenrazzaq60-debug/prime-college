@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+<head>
+<title>Registration Form</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background: linear-gradient(120deg,#00c5cf, #f0c5fc, #f062cf);
+
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+box-sizing:border-box;
+}
+
+/* FORM CARD FIXED */
+form{
+background:white;
+width:100%;
+max-width:420px;
+padding:25px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+h1{
+text-align:center;
+color:#4f46e5;
+margin-bottom:15px;
+}
+
+/* LABEL */
+label{
+font-weight:bold;
+font-size:14px;
+color:#333;
+}
+
+/* INPUTS */
+input,select{
+width:100%;
+padding:10px;
+margin:6px 0 12px 0;
+border:1px solid #ccc;
+border-radius:8px;
+outline:none;
+transition:0.3s;
+box-sizing:border-box;
+}
+
+input:focus,select:focus{
+border-color:#4f46e5;
+box-shadow:0 0 5px rgba(79,70,229,0.3);
+}
+
+/* RADIO */
+input[type="radio"]{
+width:auto;
+margin-right:5px;
+}
+
+/* BUTTONS */
+button{
+width:100%;
+padding:12px;
+margin-top:10px;
+border:none;
+border-radius:8px;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button[onclick]{
+background:#4f46e5;
+color:white;
+}
+
+button[onclick]:hover{
+background:#3730a3;
+transform:scale(1.02);
+}
+
+button[type="reset"]{
+background:#ef4444;
+color:white;
+}
+
+button[type="reset"]:hover{
+background:#b91c1c;
+transform:scale(1.02);
+}
+
+</style>
+</head>
+
+<body>
+
+<form>
+
+<h1>📝 Registration Form</h1>
+
+<label>Name:</label>
+<input type="text" id="name" placeholder="Enter your name">
+
+<label>Father Name:</label>
+<input type="text" id="fname" placeholder="Enter your father name" >
+
+<label>CNIC/B-Form:</label>
+<input type="text" id="cnic" placeholder="Enter CNIC">
+
+<label>Email:</label>
+<input type="email" id="email" placeholder="sdd@gmail.com">
+
+<label>Date of Birth:</label>
+<input type="date" id="birth">
+
+<label>Phone Number:</label>
+<input type="number" id="phone" placeholder="03XXXXXXXXXX">
+
+<label>Gender:</label><br>
+<input type="radio" name="gender" value="male">Male
+<input type="radio" name="gender" value="female">Female<br><br>
+
+<label>Password:</label>
+<input type="password" id="pass">
+
+<label>Confirm Password:</label>
+<input type="password" id="cpass">
+
+<label>Courses:</label><br>
+<input type="radio" name="course">Web Development<br>
+<input type="radio" name="course">AI<br>
+<input type="radio" name="course">Cyber Security<br><br>
+
+<label>Select Institute:</label>
+<select>
+<option>Select Institute</option>
+<option>Women University Multan</option>
+<option>BZU Multan</option>
+<option>NUST Islamabad</option>
+<option>UET Lahore</option>
+</select>
+
+<button type="button" onclick="validate()">Register</button>
+<button type="reset">Reset</button>
+
+</form>
+
+<script>
+function validate(){
+
+let name=document.getElementById("name").value;
+let fname=document.getElementById("fname").value;
+let cnic=document.getElementById("cnic").value;
+let email=document.getElementById("email").value;
+let dob=document.getElementById("birth").value;
+let phone=document.getElementById("phone").value;
+let pass=document.getElementById("pass").value;
+let cpass=document.getElementById("cpass").value;
+
+let gender=document.querySelector('input[name="gender"]:checked');
+let course=document.querySelector('input[name="course"]:checked');
+let institute=document.querySelector("select").value;
+
+if(name==""||fname==""||cnic==""||email==""||dob==""||phone==""||pass==""||cpass==""){
+alert("❌ Please fill all fields");
+return;
+}
+
+else if(cnic.length!=13){
+alert("❌ Please enter 13 digit CNIC");
+return;
+}
+
+else if(!gender){
+alert("❌ Please select gender");
+return;
+}
+
+else if(!course){
+alert("❌ Please select course");
+return;
+}
+
+else if(institute=="Select Institute"){
+alert("❌ Please select institute");
+return;
+}
+
+else if(pass!=cpass){
+alert("❌ Password does not match");
+return;
+}
+
+else{
+alert("🎉 Registration Successful!");
+}
+
+}
+</script>
+
+</body>
+</html>
