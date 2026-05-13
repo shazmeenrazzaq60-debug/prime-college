@@ -51,7 +51,6 @@ nav ul li a:hover{
     color: #60a5fa;
 }
 
-/* HERO SECTION */
 .hero{
     height: 90vh;
     background-image: url('https://www.superiorcolleges.edu.pk/wp-content/uploads/2023/09/Buildingwbp-scaled.webp');
@@ -80,7 +79,6 @@ nav ul li a:hover{
     margin-top: 20px;
 }
 
-/* BUTTON */
 button{
     margin-top: 30px;
     padding: 12px 25px;
@@ -98,7 +96,6 @@ button:hover{
     transform: scale(1.05);
 }
 
-/* CARDS */
 .cards{
     display: flex;
     justify-content: center;
@@ -108,7 +105,7 @@ button:hover{
 }
 
 .card{
-    background-color: white;
+    background-color: pink;
     width: 280px;
     padding: 25px;
     border-radius: 15px;
@@ -126,7 +123,6 @@ button:hover{
     color: #1e3a8a;
 }
 
-/* NOTICE BOARD */
 .notice-board{
     background-color: #1e40af;
     color: white;
@@ -138,7 +134,6 @@ button:hover{
     margin-bottom: 15px;
 }
 
-/* COMMON PAGE SECTION */
 .page-section{
     width: 80%;
     margin: auto;
@@ -157,7 +152,6 @@ button:hover{
     margin-bottom: 20px;
 }
 
-/* ABOUT PAGE */
 .about-container{
     display: flex;
     gap: 40px;
