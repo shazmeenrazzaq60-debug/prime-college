@@ -7,7 +7,7 @@
 <body>
 
 <nav>
-    <div class="logo">Superior College</div>
+    <div class="logo">Prime College</div>
 
     <ul>
         <li><a href="index.html">Home</a></li>
@@ -24,7 +24,7 @@
 
     <h1>Contact Us</h1>
 
-    <p>Email: info@superiorcollege.com</p>
+    <p>Email: info@primecollege.com</p>
 
     <p>Phone: 0300-1234567</p>
 
@@ -32,19 +32,33 @@
 
     <form>
 
-        <input type="text" placeholder="Your Name">
+        <input type="text" id="fname" placeholder="Your Name">
 
-        <input type="email" placeholder="Your Email">
+        <input type="email" id="mail" placeholder="Your Email">
 
         <textarea placeholder="Message"></textarea>
 
-        <button type="submit">
+        <button onclick="validate()">
             Send Message
         </button>
 
     </form>
 
 </section>
+<script>
+function validate(){
+
+let fname=document.getElementById("fname").value;
+let mail=document.getElementById("mail").value;
+
+if(name=="" || mail==""){
+alert("❌ Please fill all fields");
+return;
+}
+}
+</script>
+
+
 
 </body>
 </html>
