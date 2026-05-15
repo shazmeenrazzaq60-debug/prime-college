@@ -53,7 +53,7 @@ nav ul li a:hover{
 
 .hero{
     height: 90vh;
-    background-image: url('https://www.superiorcolleges.edu.pk/wp-content/uploads/2023/09/Buildingwbp-scaled.webp');
+    background-image: url('https://pcahs.prime.edu.pk/wp-content/uploads/2025/11/pcahs-scaled.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -122,22 +122,14 @@ button:hover{
     margin-bottom: 15px;
     color: #1e3a8a;
 }
-
-.notice-board{
-    background-color: #1e40af;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-.notice-board h2{
-    margin-bottom: 15px;
-}
 .page-section{
-    width: 80%;
+    width: 70%;
     margin: auto;
     padding: 40px 0;
 }
+
+
+
 
 .page-section h1{
     font-size: 40px;
@@ -160,12 +152,98 @@ button:hover{
 }
 
 .page-section{
-    background-color: white;
+
+    background:linear-gradient(to bottom, #d0f0c0, #a8e6cf);
     padding: 40px;
     border-radius: 10px;
     margin-top: 40px;
     box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
+.page-section1{
+    width: 50%;
+     background:linear-gradient(to bottom, #e3f2fd, #bbdefb);
+    margin: auto;
+    padding: 40px 0;
+}
+
+
+.page-section1 h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #1e3a8a;
+}
+
+.page-section1 h2{
+    font-size: 28px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #2563eb;
+}
+
+.page-section1 p{
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.page-section1{
+
+    background:linear-gradient(to bottom, #fff3e0, #ffe0b2);;
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 40px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+.page-section2 {
+    width: 55%;
+    margin: 50px auto;
+    padding: 50px;
+
+    background: linear-gradient(135deg, #ffffff, #e0f7fa);
+    border-radius: 20px;
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+
+    border: 2px solid #38bdf8;
+}
+
+/* Main Heading */
+.page-section2 h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #0f172a;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Sub Heading */
+.page-section2 h2 {
+    font-size: 28px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #0284c7;
+    border-left: 5px solid #38bdf8;
+    padding-left: 10px;
+}
+
+/* Paragraph */
+.page-section2 p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #334155;
+    text-align: justify;
+}
+
+/* Hover Effect */
+.page-section2:hover {
+    transform: translateY(-5px);
+    transition: 0.4s ease;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.2);
+}
+
+
 
 @media(max-width:768px){
 
